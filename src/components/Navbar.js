@@ -85,7 +85,7 @@ function Navbar() {
       <div
         className={
           toggle
-            ? " absolute w-screen bg-black text-center text-white items-center"
+            ? "  w-screen bg-black text-center text-white items-center"
             : "hidden"
         }
       >
