@@ -2,10 +2,10 @@ import React from "react";
 
 function Information() {
   return (
-    <div className="h-auto bg-gradient-to-r from-brightRed to-red-500 text-white text-center font-bold text-lg grid grid-flow-row place-items-center place-content-evenly lg:h-52 lg:grid-flow-col">
+    <section className="circuitOrange font-nunito h-auto text-white text-center font-bold text-2xl grid grid-flow-row place-items-center place-content-evenly lg:h-72 lg:grid-flow-col">
       <div>
         <svg
-          className="w-20 h-20 m-auto text-white animate-pulse"
+          className="w-20 h-20 m-auto text-white "
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -22,7 +22,7 @@ function Information() {
       </div>
       <div>
         <svg
-          className="w-20 h-20 m-auto text-white animate-pulse"
+          className="w-20 h-20 m-auto text-white "
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -39,7 +39,7 @@ function Information() {
       </div>
       <div>
         <svg
-          className="w-20 h-20 m-auto text-white animate-pulse"
+          className="w-20 h-20 m-auto text-white "
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ function Information() {
       </div>
       <div>
         <svg
-          className="w-20 h-20 m-auto text-white animate-pulse"
+          className="w-20 h-20 m-auto text-white "
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ function Information() {
         </svg>
         <h1>de 50 Publicações e Materiais Gratuitos</h1>
       </div>
-    </div>
+    </section>
   );
 }
 

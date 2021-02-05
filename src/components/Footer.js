@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import navLogoLg from "../images/logo_extenso.svg";
+import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import {
   FaFacebookF,
@@ -54,9 +54,9 @@ function Footer() {
 
   const renderedsiteLinks = siteLinks.map((item, idx) => {
     return (
-      <li key={idx} className="p-2">
+      <li key={idx} className="py-2">
         <Link
-          className="p-4 font-bold transition duration-500 ease-in-out hover:text-orange-600"
+          className="py-4 transition duration-500 ease-in-out hover:text-orange-600"
           to={item.route}
         >
           {item.name}
@@ -67,9 +67,9 @@ function Footer() {
 
   const renderedinitiativesLinks = initiativesLinks.map((item, idx) => {
     return (
-      <li key={idx} className="p-2">
+      <li key={idx} className="py-2">
         <Link
-          className="p-4 font-bold transition duration-500 ease-in-out hover:text-orange-600"
+          className="py-4 transition duration-500 ease-in-out hover:text-orange-600"
           to={item.route}
         >
           {item.name}
@@ -80,9 +80,9 @@ function Footer() {
 
   const renderedinnovationLinks = innovationLinks.map((item, idx) => {
     return (
-      <li key={idx} className="p-4">
+      <li key={idx} className="py-4">
         <Link
-          className="p-4 font-bold transition duration-500 ease-in-out hover:text-orange-600"
+          className="py-4 transition duration-500 ease-in-out hover:text-orange-600"
           to={item.route}
         >
           {item.name}
@@ -93,34 +93,37 @@ function Footer() {
 
   const renderedSocials = socials.map((item, idx) => {
     return (
-      <li key={idx} className="p-4 inline">
-        <IconContext.Provider value={{ className: "inline text-orange-600" }}>
+      <div key={idx} className="p-4">
+        <IconContext.Provider
+          value={{
+            className: "text-orange-600 inline-block align-middle",
+          }}
+        >
           {item.svg}
         </IconContext.Provider>
-
         <Link
-          className="p-4 font-bold transition duration-500 ease-in-out hover:text-orange-600"
+          className="p-4 inline-block align-middle font-bold transition duration-500 ease-in-out hover:text-orange-600"
           to={{ pathname: item.route }}
           target="_blank"
         >
           {item.name}
         </Link>
-      </li>
+      </div>
     );
   });
 
   return (
-    <footer className="pt-8 bg-black text-white text-center font-bold">
+    <footer className="font-nunito text-center pt-8 bg-black text-white lg:text-justify font-medium">
       <div className="grid grid-flow-row lg:grid-flow-col">
-        <div>
-          <h1 className="text-orange-600">CONTATO</h1>
+        <div className="lg:pl-12">
+          <h1 className="font-bold text-orange-600 mb-4">CONTATO</h1>
           <div>
             <h1>Avenida Treze de Maio, 23</h1>
             <h1>Salas 1610-1612, 1619 e 1620</h1>
             <h1>Centro, Rio de Janeiro</h1>
             <h1>CEP: 20.031-902</h1>
           </div>
-          <div>
+          <div className="my-4">
             <h1>Avenida das Nações Unidas, 14.401</h1>
             <h1>Ed. Tarumã, 19º andar, Conjuntos 1904-15</h1>
             <h1>Parque da Cidade, São Paulo</h1>
@@ -132,26 +135,24 @@ function Footer() {
             <h1>+55 11 2893-4154</h1>
           </div>
         </div>
-        <div className="grid grid-flow-row lg:grid-flow-col">
+        <div className="m-4 grid grid-flow-row lg:grid-flow-col">
           <div>
-            <h1 className="text-orange-600">MAPA DO SITE</h1>
+            <h1 className="font-bold text-orange-600">MAPA DO SITE</h1>
             <ul>{renderedsiteLinks}</ul>
           </div>
           <div>
-            <h1 className="text-orange-600">INICIATIVAS</h1>
+            <h1 className="font-bold text-orange-600">INICIATIVAS</h1>
             <ul>{renderedinitiativesLinks}</ul>
           </div>
           <div>
-            <h1 className="text-orange-600">INOVAÇÃO</h1>
+            <h1 className="font-bold text-orange-600">INOVAÇÃO</h1>
             <ul>{renderedinnovationLinks}</ul>
           </div>
         </div>
       </div>
-      <div className="p-16 grid grid-flow-row lg:grid-flow-col">
-        <div>
-          <ul>{renderedSocials}</ul>
-        </div>
-        <h1>Copyright FCM Law 2021</h1>
+      <div className="p-8 grid grid-flow-row lg:grid-flow-col">
+        <div className="lg:flex lg:flex-row">{renderedSocials}</div>
+        <h1 className="p-4">Copyright FCM Law 2021</h1>
         <div>
           <img className="w-auto h-auto" src={navLogoLg} />
         </div>

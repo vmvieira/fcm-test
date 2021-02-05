@@ -17,6 +17,9 @@ module.exports = {
         orange: colors.orange,
         brightRed: "#e71606",
       },
+      fontFamily: {
+        nunito: ["Nunito"],
+      },
     },
   },
   variants: {

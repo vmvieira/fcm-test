@@ -40,7 +40,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center h-20 bg-black text-white relative shadow-sm">
+      <nav className="font-nunito flex justify-between items-center h-20 bg-black text-white relative shadow-sm">
         <Link to="/" className="pl-2 md:pl-12 lg:pl-12">
           <img src={navLogoLg} alt="company logo" className="w-80 h-16" />
         </Link>
@@ -82,7 +82,7 @@ function Navbar() {
         </div>
         <ul className="pr-2 lg:block hidden pr-12">{renderedItems}</ul>
       </nav>
-      <div
+      <nav
         className={
           toggle
             ? "  w-screen bg-black text-center text-white items-center"
@@ -90,7 +90,7 @@ function Navbar() {
         }
       >
         <ul>{renderedBurguer}</ul>
-      </div>
+      </nav>
     </>
   );
 }

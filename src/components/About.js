@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoCurto from "../images/logo_curto.svg";
+import banner from "../images/banner.png";
 import startUps from "../images/startups.jpg";
 import moneyShake from "../images/money-shake.jpg";
 import lawyer from "../images/law.jpg";
@@ -42,7 +42,7 @@ function About() {
         </h1>
         <p className="mb-4 font-medium">{item.text}</p>
         <Link
-          className="inline-block px-6 py-2 font-medium shadow-md text-center text-white transition bg-gradient-to-r from-orange-300 to-brightRed rounded-full shadow hover:shadow-lg hover:bg-orange-600 transform hover:-translate-y-2 transition-transform duration-500 ease-in-out"
+          className="inline-block px-6 py-2 font-bold shadow-md text-center text-white transition bg-gradient-to-r from-orange-300 to-brightRed rounded-full shadow hover:shadow-lg hover:bg-orange-600 transform hover:-translate-y-2 transition-transform duration-500 ease-in-out"
           to="/"
         >
           {item.link}
@@ -52,24 +52,9 @@ function About() {
   });
 
   return (
-    <section className="h-screen">
-      <div className="grid grid-flow-row m-10 font-medium place-content-evenly place-items-center text-center lg:grid-cols-2">
-        <img
-          className="w-72 h-72 lg:row-span-3"
-          src={logoCurto}
-          alt="svg logo"
-        />
-        <h1 className="text-lg">
-          Nós <em>entendemos</em> o ecossistema de inovação.
-        </h1>
-        <h1 className="text-lg my-8">
-          Nosso escritório está atualizado e apto a assessorar com todas as
-          tendências do mercado.
-        </h1>
-        <h1 className="text-lg">
-          Evitamos a papelada e os erros com o uso da tecnologia mais atual, com
-          sistemas e aplicativos na nuvem.
-        </h1>
+    <section className="font-nunito h-auto w-auto my-12">
+      <div className="mb-8">
+        <img className="object-contain w-full h-full" src={banner} />
       </div>
       <div className="grid grid-flow-row gap-8 place-content-evenly lg:grid-flow-col">
         {renderedItems}
