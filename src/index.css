@@ -5,13 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.classic {
+#classic {
   background-image: linear-gradient(#000, #000);
   background-repeat: no-repeat;
   transition: background-size 1.5s, color 1.5s;
 }
 
-.creative {
+#creative {
   background-image: linear-gradient(to left, #e71606, #fbbf24);
   background-repeat: no-repeat;
   transition: background-size 1.5s, color 1.5s;
@@ -51,4 +51,82 @@
 .slick-prev:before,
 .slick-next:before {
   color: #e71606 !important;
+}
+
+@keyframes curtainAnimationClassic {
+  0% {
+    background-image: linear-gradient(#000, #000);
+    background-position: 0% 50%;
+    background-size: 0% 100%;
+  }
+
+  25% {
+    background-image: linear-gradient(#000, #000);
+    background-size: 33% 100%;
+  }
+
+  50% {
+    background-image: linear-gradient(#000, #000);
+    background-size: 66% 100%;
+  }
+
+  75% {
+    background-image: linear-gradient(#000, #000);
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background-image: linear-gradient(#000, #000);
+    background-size: 100% 100%;
+    color: #fff;
+  }
+}
+
+.pageLoadClassic {
+  animation: curtainAnimationClassic;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes curtainAnimationCreative {
+  0% {
+    background-image: linear-gradient(to left, #e71606, #fbbf24);
+    background-position: 100% 50%;
+    background-size: 0% 100%;
+  }
+
+  25% {
+    background-image: linear-gradient(to left, #e71606, #fbbf24);
+    background-size: 33% 100%;
+  }
+
+  50% {
+    background-image: linear-gradient(to left, #e71606, #fbbf24);
+    background-size: 66% 100%;
+  }
+
+  75% {
+    background-image: linear-gradient(to left, #e71606, #fbbf24);
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background-image: linear-gradient(to left, #e71606, #fbbf24);
+    background-size: 100% 100%;
+    color: #fff;
+  }
+}
+
+.pageLoadCreative {
+  animation: curtainAnimationCreative;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
