@@ -5,13 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#classic {
+.classic {
   background-image: linear-gradient(#000, #000);
   background-repeat: no-repeat;
   transition: background-size 1.5s, color 1.5s;
 }
 
-#creative {
+.creative {
   background-image: linear-gradient(to left, #e71606, #fbbf24);
   background-repeat: no-repeat;
   transition: background-size 1.5s, color 1.5s;
@@ -89,7 +89,6 @@
   animation-delay: 0.5s;
   animation-iteration-count: 2;
   animation-direction: alternate;
-  animation-fill-mode: forwards;
 }
 
 @keyframes curtainAnimationCreative {
@@ -125,8 +124,7 @@
   animation: curtainAnimationCreative;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-iteration-count: 2;
   animation-direction: alternate;
-  animation-fill-mode: forwards;
 }

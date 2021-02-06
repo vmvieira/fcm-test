@@ -36,7 +36,7 @@ function About() {
         key={idx}
         className="p-3 border-2 rounded-lg border-opacity-50 shadow-md border-gray-200 flex flex-col place-content-center place-items-center text-center lg:transform hover:scale-110 transition-transform duration-500 ease-in-out"
       >
-        <img className="h-auto w-auto" src={item.svg} />
+        <img className="h-auto w-auto" src={item.svg} alt="company products" />
         <h1 className="my-2 font-bold tracking-widest text-brightRed">
           {item.heading}
         </h1>
@@ -54,7 +54,11 @@ function About() {
   return (
     <section className="font-nunito h-auto w-auto my-12">
       <div className="mb-8">
-        <img className="object-contain w-full h-full" src={banner} />
+        <img
+          className="object-contain w-full h-full"
+          src={banner}
+          alt="company banner"
+        />
       </div>
       <div className="grid grid-flow-row gap-8 place-content-evenly lg:grid-flow-col">
         {renderedItems}

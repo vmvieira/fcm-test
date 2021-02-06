@@ -5,15 +5,17 @@ import HeroSection from "./HeroSection";
 import Information from "./Information";
 import Navbar from "./Navbar";
 import Team from "./Team";
+import Testimonials from "./Testimonials";
 
 function Homepage() {
   return (
     <>
       <Navbar />
       <HeroSection />
+      <About />
       <Information />
       <Team />
-      <About />
+      <Testimonials />
       <Footer />
     </>
   );

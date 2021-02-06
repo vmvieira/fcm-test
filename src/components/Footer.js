@@ -154,7 +154,7 @@ function Footer() {
         <div className="lg:flex lg:flex-row">{renderedSocials}</div>
         <h1 className="p-4">Copyright FCM Law 2021</h1>
         <div>
-          <img className="w-auto h-auto" src={navLogoLg} />
+          <img className="w-auto h-auto" src={navLogoLg} alt="company logo" />
         </div>
       </div>
     </footer>

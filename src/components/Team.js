@@ -174,10 +174,10 @@ function Testimonials() {
     <section className="font-nunito my-16 p-8 grid grid-flow-row gap-y-12 gap-x-20 lg:p-16 lg:grid-cols-2">
       <div className="flex flex-col place-content-evenly text-center gap-y-8">
         <h1 className="text-3xl lg:text-7xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-orange-300 to-brightRed">
-          Time
+          Equipe
         </h1>
         <h1 className="text-lg lg:text-2xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-orange-300 to-brightRed">
-          Conheça nossa equipe de especialistas em inovação!
+          Conheça nosso time de especialistas em inovação!
         </h1>
         <Link
           className="inline-block mx-auto lg:w-1/2 px-6 py-2 font-bold shadow-md text-center text-white transition bg-gradient-to-r from-orange-300 to-brightRed rounded-full shadow hover:shadow-lg hover:bg-orange-600 transform hover:-translate-y-2 transition-transform duration-500 ease-in-out"
