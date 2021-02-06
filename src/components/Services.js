@@ -92,7 +92,7 @@ function Services() {
   });
 
   return (
-    <section className="circuitOrange font-nunito h-auto text-white font-bold text-lg grid grid-flow-row place-items-center place-content-evenly lg:h-72 lg:grid-cols-3">
+    <section className="circuitOrange font-nunito h-auto text-white font-bold text-lg grid grid-flow-row place-items-center place-content-evenly lg:h-96 lg:grid-cols-3">
       {renderedItems}
     </section>
   );
