@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <section className="relative h-screen">
       <div className="grid grid-flow-row mb-10 h-screen lg:grid-flow-col">
-        <h1 className="textBorderWhite font-bold text-transparent bg-gradient-to-r bg-clip-text from-brightRed to-black font-nunito pt-8 align-middle text-center lg:absolute lg:text-4xl lg:pt-36 inset-0">
+        <h1 className="textBorderWhite font-bold font-nunito pt-8 align-middle text-center lg:absolute lg:text-4xl lg:pt-36 inset-0">
           Soluções <em>especializadas</em> para os clássicos e novos desafios.
         </h1>
         <div className="pageLoadClassic classic to-right table w-full h-full">
