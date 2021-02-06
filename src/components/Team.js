@@ -144,7 +144,7 @@ function Testimonials() {
 
   const renderedCarousel = equipe.map((item, idx) => {
     return (
-      <div className="h-auto w-auto text-center">
+      <div key={idx} className="h-auto w-auto text-center">
         <div className="h-auto w-auto">
           <img className="m-auto h-48 w-48" src={item.foto} alt="" />
         </div>
@@ -188,7 +188,6 @@ function Testimonials() {
       </div>
       <div className="min-h-0 min-w-0">
         <Slider {...settings}>{renderedCarousel}</Slider>
-        <div className="flex justify-evenly"></div>
       </div>
     </section>
   );

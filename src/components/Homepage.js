@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import Information from "./Information";
 import Navbar from "./Navbar";
+import Services from "./Services";
 import Team from "./Team";
 import Testimonials from "./Testimonials";
 
@@ -13,9 +14,10 @@ function Homepage() {
       <Navbar />
       <HeroSection />
       <About />
+      <Services />
+      <Testimonials />
       <Information />
       <Team />
-      <Testimonials />
       <Footer />
     </>
   );
