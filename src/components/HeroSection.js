@@ -2,12 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logoClassic from "../images/logo_pena_acima.svg";
 import logoNew from "../images/logo_vermelho.svg";
+import { IconContext } from "react-icons";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 function HeroSection() {
   return (
     <section className="relative h-screen">
+      <IconContext.Provider
+        value={{
+          className:
+            "hidden animate-bounce text-white lg:inline lg:absolute lg:bottom-0 lg:right-0 h-8 w-8 mb-28 mr-16",
+        }}
+      >
+        <FaAngleDoubleDown />
+      </IconContext.Provider>
+
       <div className="grid grid-flow-row mb-10 h-screen lg:grid-flow-col">
-        <h1 className="textBorderWhite font-bold font-nunito pt-8 align-middle text-center lg:absolute lg:text-4xl lg:pt-36 inset-0">
+        <h1 className="text-sm textBorderWhite font-bold font-nunito pt-8 align-middle text-center lg:absolute lg:text-4xl lg:pt-36 inset-0">
           Soluções <em>especializadas</em> para os clássicos e novos desafios.
         </h1>
         <div className="pageLoadClassic classic to-right table w-full h-full">

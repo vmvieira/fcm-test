@@ -71,11 +71,8 @@ function Services() {
 
   const renderedItems = servicesList.map((item, idx) => {
     return (
-      <Link to={{ pathname: item.route }} target="_blank">
-        <div
-          key={idx}
-          className="flex px-4 m-4 inline-block shadow-md border-2 rounded-lg bg-white border-white shadow transition hover:shadow-lg transform hover:-translate-y-2 transition-transform duration-500 ease-in-out"
-        >
+      <Link key={idx} to={{ pathname: item.route }} target="_blank">
+        <div className="flex px-4 m-4 inline-block shadow-md border-2 rounded-lg bg-white border-white shadow transition hover:shadow-lg transform hover:-translate-y-2 transition-transform duration-500 ease-in-out">
           <IconContext.Provider
             value={{
               className: "text-brightRed block m-auto",
