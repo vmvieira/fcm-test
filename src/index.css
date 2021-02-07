@@ -87,8 +87,9 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-delay: 0.5s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 @keyframes curtainAnimationCreative {
@@ -125,8 +126,9 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-delay: 0.5s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 .textBorderWhite {
